@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bio | Tim Solomon</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300..500;1,300..500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E8EDEE;--ink:#14222A;--mute:#51636C;--rule:#B9C5C9;--accent:#A8243B;--card:#F4F7F7;
+--serif:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1A20;--ink:#E6EEF0;--mute:#93A5AD;--rule:#2B3E48;--accent:#E0566D;--card:#15232B}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 var(--serif)}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+header{border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem 2rem;padding-top:1rem;padding-bottom:1rem}
+header strong{font:500 1rem var(--sans)}
+nav{display:flex;gap:1.5rem;font:400 .95rem var(--sans)}
+nav a{color:var(--mute);text-decoration:none;padding-bottom:.2rem}
+nav a:hover{color:var(--ink)}
+nav a[aria-current]{color:var(--ink);border-bottom:2px solid var(--accent)}
+main{padding:3rem 0 4rem}
+h1{font:300 clamp(2.4rem,6vw,4rem)/1.05 var(--serif);letter-spacing:-.02em;margin:0 0 1rem}
+h2{font:500 1.1rem var(--sans);margin:2.5rem 0 .5rem}
+p{margin:0 0 1rem}
+.text{max-width:40rem}
+.sub{color:var(--mute);margin-bottom:2rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;height:auto;background:var(--card);border:1px solid var(--rule)}
+.gallery figcaption{font-size:.95rem;color:var(--mute);padding-top:.4rem}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1.5rem}
+.frame{aspect-ratio:16/9;background:#000}
+.frame iframe{width:100%;height:100%;border:0;display:block}
+.videos p{font-size:.95rem;color:var(--mute);margin:.4rem 0 0}
+footer{border-top:1px solid var(--rule);padding:1.5rem 0;font:400 .85rem var(--sans);color:var(--mute)}
+/* visual touches */
+header{background:var(--card)}
+header strong{font-size:1.05rem;letter-spacing:.01em}
+h1::before{content:"";display:block;width:3.5rem;height:4px;background:var(--accent);margin-bottom:1.4rem}
+h2{border-top:1px solid var(--rule);padding-top:1.2rem;margin-top:2.2rem}
+.gallery a{display:block;overflow:hidden;background:var(--card)}
+.gallery img{transition:transform .35s ease}
+.gallery a:hover img{transform:scale(1.03)}
+.frame{border:1px solid var(--rule)}
+.videos>div{background:var(--card);padding:.75rem .75rem 1rem;border:1px solid var(--rule)}
+.videos .frame{border:0}
+.sub{font-size:1.2rem}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <strong>Tim Solomon</strong>
+  <nav>
+    <a href="index.html" aria-current="page">Bio</a>
+    <a href="imaging.html">Imaging and Modeling</a>
+    <a href="animation.html">Animation</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+<h1>Tim Solomon</h1>
+<div class="text">
+  <p>MS Modern Human Anatomy Candidate at CU Anschutz. Anatomical Imaging and Modeling Track.</p>
+
+  <h2>About</h2>
+  <p>My primary fields of interest are drug assisted therapeutics and neurodegenerative disease. After completing the MHA program, I will be seeking a PhD in Neuroscience. Prior to pursuing higher education, I worked as an aircraft mechanic and in flight systems operator at VQ-4.</p>
+
+  <h2>Education</h2>
+  <p><strong>University of Colorado, Denver</strong><br>BA Psychology, 2024</p>
+  <p><strong>University of Colorado, Anschutz Medical Campus</strong><br>MS MHA Candidate, 2027</p>
+
+  <h2>Software</h2>
+  <p>3D Slicer, Maya, Blender, Unreal Engine, DSI Studio</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:Timothy.Solomon@cuanschutz.edu">Timothy.Solomon@cuanschutz.edu</a></p>
+</div>
+</div></main>
+<footer><div class="wrap">&copy; 2026 Tim Solomon</div></footer>
+</body></html>
